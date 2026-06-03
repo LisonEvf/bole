@@ -22,6 +22,7 @@
   "plugins": [
     {
       "name": "bole",
+      "source": "https://github.com/LisonEvf/bole",
       "description": "Bole — 伯乐多Agent编排引擎：分析任务、拆解角色、生成编排提示词并执行",
       "skills": [
         "./skills/bole"
