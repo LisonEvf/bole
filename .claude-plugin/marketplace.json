@@ -1,0 +1,69 @@
+{
+  "name": "bole",
+  "displayName": "Bole — 伯乐多Agent编排引擎",
+  "owner": {
+    "name": "LisonEvf",
+    "url": "https://github.com/LisonEvf"
+  },
+  "metadata": {
+    "description": "根据任务描述动态分析角色、拆解子任务、编排执行流程的多Agent编排引擎",
+    "version": "1.0.0",
+    "tags": ["orchestration", "multi-agent", "task-decomposition", "automation"],
+    "category": "orchestration",
+    "license": "MIT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LisonEvf/bole"
+  },
+  "compatibility": {
+    "claudeCode": ">=1.0.0"
+  },
+  "installation": {
+    "method": "git-clone",
+    "steps": [
+      "git clone https://github.com/LisonEvf/bole.git",
+      "cd bole",
+      "claude plugin install ."
+    ]
+  },
+  "plugins": [
+    {
+      "name": "bole",
+      "description": "Bole — 伯乐多Agent编排引擎：分析任务、拆解角色、生成编排提示词并执行",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        {
+          "path": "./skills/bole",
+          "trigger": "复杂工程任务描述，如开发系统、分析数据、重构项目等"
+        }
+      ],
+      "scripts": [
+        {
+          "name": "analyze-task",
+          "path": "./scripts/analyze-task.py",
+          "description": "任务分析辅助脚本，解析任务描述输出角色和子任务建议",
+          "runtime": "python3"
+        }
+      ],
+      "settings": {
+        "output_dir": {
+          "type": "string",
+          "default": ".",
+          "description": "输出目录"
+        },
+        "batch_size": {
+          "type": "number",
+          "default": 1,
+          "description": "批量执行大小"
+        },
+        "max_fix_rounds": {
+          "type": "number",
+          "default": 3,
+          "description": "修正循环最大轮数"
+        }
+      }
+    }
+  ]
+}
