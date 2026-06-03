@@ -1,4 +1,19 @@
-# Bole — 伯乐多Agent编排引擎
+<h1 align="center">伯乐 — 多Agent编排引擎</h1>
+<p align="center">
+  <em>支持 Claude Code、Codex、Cursor、Copilot、Gemini CLI 等多平台。</em>
+</p>
+
+<p align="center">
+  <a href="#-安装"><img src="https://img.shields.io/badge/快速开始-blue" alt="Quick Start" /></a>
+  <a href="https://github.com/LisonEvf/bole/blob/main/LICENSE"><img src="https://img.shields.io/badge/许可证-MIT-yellow" alt="License: MIT" /></a>
+  <a href="https://docs.anthropic.com/en/docs/claude-code"><img src="https://img.shields.io/badge/Claude_Code-8A2BE2" alt="Claude Code" /></a>
+  <a href="#codex"><img src="https://img.shields.io/badge/Codex-000000" alt="Codex" /></a>
+  <a href="#vs-code--github-copilot"><img src="https://img.shields.io/badge/Copilot-24292e" alt="Copilot" /></a>
+  <a href="#copilot-cli"><img src="https://img.shields.io/badge/Copilot_CLI-24292e" alt="Copilot CLI" /></a>
+  <a href="#gemini-cli"><img src="https://img.shields.io/badge/Gemini_CLI-4285F4" alt="Gemini CLI" /></a>
+  <a href="#opencode"><img src="https://img.shields.io/badge/OpenCode-38bdf8" alt="OpenCode" /></a>
+</p>
+
 
 ## 简介
 
@@ -37,13 +52,8 @@ bole/
 在 Claude Code 中执行：
 
 ```
-/plugin install https://github.com/LisonEvf/bole
-```
-
-或从本地路径安装：
-
-```
-/plugin install /path/to/bole
+/plugin marketplace add LisonEvf/bole
+/plugin install bole
 ```
 
 ### 方式二：手动安装
