@@ -3,7 +3,7 @@
   "displayName": "Bole — 伯乐多Agent编排引擎",
   "owner": {
     "name": "LisonEvf",
-    "url": "https://github.com/LisonEvf"
+    "email": "lisonevf@gmail.com"
   },
   "metadata": {
     "description": "根据任务描述动态分析角色、拆解子任务、编排执行流程的多Agent编排引擎",
@@ -12,17 +12,10 @@
     "category": "orchestration",
     "license": "MIT"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/LisonEvf/bole"
-  },
-  "compatibility": {
-    "claudeCode": ">=1.0.0"
-  },
   "plugins": [
     {
       "name": "bole",
-      "source": "https://github.com/LisonEvf/bole",
+      "source": "./",
       "description": "Bole — 伯乐多Agent编排引擎：分析任务、拆解角色、生成编排提示词并执行",
       "skills": [
         "./skills/bole"
